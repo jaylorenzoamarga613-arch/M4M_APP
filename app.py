@@ -598,10 +598,22 @@ st.markdown(f"""
         <span class='hero-pill'>Balingoan, MisOr</span>
       </div>
     </div>
-    <div style='display:flex;gap:28px;flex-wrap:wrap;align-items:center'>
-      <div class='stat-hero'><div class='stat-hero-n'>{total}</div><div class='stat-hero-l'>Registered</div></div>
-      <div class='stat-hero'><div class='stat-hero-n'>&#8369;{revenue:,}</div><div class='stat-hero-l'>Revenue</div></div>
-      <div class='stat-hero'><div class='stat-hero-n'>{today_n}</div><div class='stat-hero-l'>Today</div></div>
+    <div style='display:flex;flex-direction:column;align-items:center;
+      background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.25);
+      border-radius:6px;padding:18px 32px;text-align:center'>
+      <div style='font-family:Barlow Condensed,sans-serif;font-size:72px;font-weight:900;
+        line-height:1;background:linear-gradient(180deg,#e8d88a,#c9a84c);
+        -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text'>
+        {days_left}
+      </div>
+      <div style='font-family:Barlow Condensed,sans-serif;font-size:11px;font-weight:700;
+        letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin-top:4px'>
+        Days to Race Day
+      </div>
+      <div style='font-family:Barlow Condensed,sans-serif;font-size:12px;font-weight:600;
+        letter-spacing:2px;text-transform:uppercase;color:rgba(201,168,76,.5);margin-top:6px'>
+        {EVENT_DATE}
+      </div>
     </div>
   </div>
 </div>
