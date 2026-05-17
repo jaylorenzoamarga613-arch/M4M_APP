@@ -8,7 +8,7 @@ from PIL import Image
 # ─────────────────────────────────────────────────────────────────
 #  CONFIG — change these to customize your event
 # ─────────────────────────────────────────────────────────────────
-ADMIN_PASSWORD  = "bakyardHQ2026"          # change this!
+ADMIN_PASSWORD  = "bakyard2026"          # change this!
 DATA_FILE       = "registrations.json"   # persists data on disk
 ASSETS_DIR      = "assets"              # folder for uploaded images
 
